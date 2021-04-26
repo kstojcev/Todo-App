@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+ol,
+ul {
+  padding: 0;
+}
+
+body {
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Roboto", Arial;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background: #f6f8ff;
+  overflow: hidden;
+}
+
+li {
+  list-style: none;
+  font-family: "Rubik", sans-serif;
+}
+
+.loader {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  font-family: "Rubik", sans-serif;
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+.toDoContainer {
+  width: 400px;
+}
+
+h3 {
+  font-size: 18px;
+  border-bottom: 2px solid black;
+  text-transform: uppercase;
+}
+
+.incompleteTasks li {
+  padding-left: 1%;
+  padding-right: 1%;
+  font-size: 18px;
+  border-bottom: 1px solid #bec8ed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+
+button {
+  font-size: 18px !important;
+}
+
+.editButton:hover {
+  color: #288ff0;
+}
+.deleteButton:hover {
+  color: #f02828;
+}
+
+.openModal {
+  font-size: 18px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 90% !important;
+  right: 2%;
+  text-align: center;
+  top: 50px;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  background-color: #076aff;
+  transition: transform 0.4s ease-in-out;
+}
+
+.openModal:hover {
+  cursor: pointer;
+  transform: rotate(45deg);
+}
+
+.checkbox__control {
+  display: inline-grid;
+  width: 1em;
+  height: 1em;
+  border-radius: 0.25em;
+  border: 0.1em solid currentColor;
+}
+
+/* The Modal (background) */
+.modal {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  padding: 20px;
+  border: 1px solid #888;
+}
+
+/* The Close Button */
+.closeModal {
+  color: #aaa;
+  margin-left: auto;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closeModal:hover,
+.closeModal:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 426px) {
+  .toDoContainer {
+    width: 90vw;
+  }
+}
