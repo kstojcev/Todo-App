@@ -49,6 +49,7 @@ li {
 }
 
 h3 {
+  margin: unset;
   font-size: 18px;
   border-bottom: 2px solid black;
   text-transform: uppercase;
@@ -65,13 +66,28 @@ h3 {
   background-color: white;
 }
 
+.incompleteTasks label {
+  display: unset;
+}
+
 button {
   font-size: 18px !important;
+}
+
+.editButton {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.deleteButton {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .editButton:hover {
   color: #288ff0;
 }
+
 .deleteButton:hover {
   color: #f02828;
 }
@@ -125,6 +141,16 @@ button {
   background-color: #fefefe;
   padding: 20px;
   border: 1px solid #888;
+}
+
+#addItemInput {
+  width: 100%;
+  padding: 2%;
+}
+
+#addItemInput:focus {
+  outline: none;
+  border-color: #868080;
 }
 
 /* The Close Button */
